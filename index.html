@@ -19,7 +19,7 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav_logo">Esteban Ipial Ayala</a>
+                <a href="#" class="nav_logo">Desarrollador de Software</a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
@@ -29,17 +29,17 @@
                         </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
+                                <i class="uil uil-user nav__icon"></i> Acerca de mi 
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                                <i class="uil uil-file-alt nav__icon"></i> Habilidades
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#services" class="nav__link">
-                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Servicios
                             </a>
                         </li>
                         <li class="nav__item">
@@ -49,7 +49,7 @@
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact me
+                                <i class="uil uil-message nav__icon"></i> Contactame
                             </a>
                         </li>
                     </ul>
@@ -80,7 +80,7 @@
                             <a href="https://dribbble.com/" target="_blank"  class="home__social-icon">
                                 <i class="uil uil-dribbble"></i>
                             </a>
-                            <a href="https://github.com/" target="_blank"  class="home__social-icon">
+                            <a href="https://github.com/EstebanIpial" target="_blank"  class="home__social-icon">
                                 <i class="uil uil-github-alt"></i>
                             </a>
                         </div>
@@ -103,8 +103,8 @@
                             </svg>
                         </div>
                         <div class="home__data">
-                            <h1 class="home__tittle">Hi , I'am Esteban Ipial Ayala</h1>
-                            <h3 class="home__subtitle">Developer Software</h3>
+                            <h1 class="home__tittle">Hola ,soy Esteban Ipial Ayala</h1>
+                            <h3 class="home__subtitle">Desarollador de Software</h3>
                             <p class="home__description">High level experience in web design and development knowledge, producing quality work.</p>
                             <a href="#contact" class="button button--flex">
                                 Contact Me <i class="uil uil-message button__icon"></i>
@@ -366,7 +366,7 @@
                         </div>
                         <!-- QUALIFICATION CONTENT 2 -->
                         <div class="qualification__content" data-content id="work">
-                            <!-- QUALIFICATION 1 -->
+                            <!-- WORKS 1 -->
                             <div class="qualification__data">
                                 <div>
                                     <h3 class="qualification__title">Desarrollador de Software</h3>
@@ -381,6 +381,23 @@
                                     <span class="qualification__line"></span>
                                 </div>
                             </div>
+                            <!-- WORKS 2 -->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Sistema SGAFH</h3>
+                                    <span class="qualification__subtitle">Sistema de gestion para la empresa - AFH Metalmecanicos</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Abril / Julio - 2023 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -388,8 +405,8 @@
 
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
-                <h2 class="section__title">Services</h2>
-                <span class="section__subtitle">What i offert</span>
+                <h2 class="section__title">Servicios</h2>
+                <span class="section__subtitle">Conocimientos</span>
             
                 <div class="services__container container grid">
                     <!-- =========== Services 1 =========== -->
@@ -619,30 +636,29 @@
                             </div>
                         </div>
                     </div>
-                    <form action="" class="contact__form grid">
+                    <form action="https://formsubmit.co/esteban.ayala.ipial@gmail.com" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Nombre</label>
-                                <input type="text" class="contact__input">
+                                <label for="nombre" class="contact__label">Nombre</label>
+                                <input  autocomplete="off" id="nombre" name="name" type="text" class="contact__input">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label for="email" class="contact__label">Email</label>
+                                <input autocomplete="off" id="email" name="email" type="email" class="contact__input">
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Proyecto</label>
-                            <input type="text" class="contact__input">
+                            <label for="proyect" class="contact__label">Proyecto</label>
+                            <input autocomplete="off" id="proyect" name="proyect" type="text" class="contact__input">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Mensaje</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label for="message" class="contact__label">Mensaje</label>
+                            <textarea autocomplete="off" id="message" name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
                         <div>
-                            <a href="#" class="button button--flex">
-                                Contactame
-                                <i class="uil uil-message button__icon"></i>
-                            </a>
+                            <button type="submit" class="contact__button button button--flex">Enviar <i class="uil uil-message button__icon"></i></button>
+                            <input type="hidden" name="_next" value="https://estebanipial.github.io/#contact">
+                            <input type="hidden" name="_captcha" value="false">
                         </div>
                     </form>
                 </div>

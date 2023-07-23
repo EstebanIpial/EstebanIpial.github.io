@@ -375,6 +375,7 @@ img {
 .button--flex{
   display: inline-flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .button--small{
@@ -399,7 +400,6 @@ img {
 
 .button__white:hover{
   background-color: #fff;
-
 }
 
 /*==================== ABOUT ====================*/
@@ -829,6 +829,14 @@ textarea {
   resize: none;
 }
 
+.contact__button{
+  border: none;
+  font-weight: var(--font-medium);
+  font-family: var(--body-font);
+  font-size: var(--font-medium);
+  color: #fff;
+}
+
 .contact__information{
   display: flex;
   margin-bottom: var(--mb-2);
@@ -1060,7 +1068,7 @@ textarea {
   .portafolio__container,
   .contact__container,
   .footer__container{
-    grid-template-columns: repeat(1, 1fr) ;
+    grid-template-columns: repeat(2, 1fr) ;
   }
 
   .qualification__sections{
