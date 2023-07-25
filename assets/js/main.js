@@ -18,6 +18,21 @@ if (navClose){
         navMenu.classList.remove('show-menu');
     })
 }
+/*===== NAV ITEM SELECT =====*/
+// Obtenemos todos los elementos de enlace dentro de la lista de navegación
+const navLinks = document.querySelectorAll('.nav__link');
+
+// Agregamos un evento de clic a cada enlace
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+
+        // Primero, eliminamos la clase 'active__link' de todos los enlaces
+        navLinks.forEach(link => link.classList.remove('active__link'));
+
+        // Luego, agregamos la clase 'active__link' solo al enlace seleccionado
+        link.classList.add('active__link');
+    });
+});
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link');
